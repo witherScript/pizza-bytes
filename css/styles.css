@@ -42,16 +42,12 @@
 .img-fluid {
   max-width: 100%;
   max-height: 500px;
-  /* Adjust this value according to your needs */
   object-fit: cover;
-  /* This will make sure your image is scaled while maintaining its aspect ratio */
 }
-
-
 
 .button:hover {
   background-color: #cc0000;
-  /* change to your desired color */
+
 }
 
 :root {
@@ -72,4 +68,24 @@
 
 .responsive-image {
   padding: var(--secondary-padding);
+}
+
+#text {
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+#title {
+  text-align: center;
+  position: relative;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
