@@ -112,3 +112,22 @@
 form {
   text-align: center;
 }
+
+.hidden {
+  display: none;
+}
+
+#receipt {
+  text-align: center;
+}
+
+#order {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+#order li::before {
+  content: "• ";
+  padding-right: 5px;
+}

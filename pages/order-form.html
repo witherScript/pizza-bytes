@@ -37,57 +37,64 @@
       </div>
     </div>
   </nav>
-  <div class="container">
+  <div class="container" id="order-form">
     <h1 style="text-align: center; font-size: 50px; color: red;">Order Online</h1>
-    <form>
+    <form id="order">
       <label for="pizzaSize">Pizza Size</label>
       <div class="section">
-        <select id="pizzaSize">
+        <select id="size">
           <option value="small">Small - $5.75</option>
           <option value="medium">Medium - $6.75</option>
           <option value="large">Large - $8.25</option>
         </select>
       </div>
+
       <div class="section">
         <h2>Toppings</h2>
         <h4>$1.75 each</h4>
-        <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+        <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
         <label for="pepperoni">Pepperoni</label><br>
 
-        <input type="checkbox" id="anchovies" name="anchovies" value="anchovies">
+        <input type="checkbox" id="anchovies" name="topping" value="anchovies">
         <label for="anchovies">Anchovies</label><br>
 
-        <input type="checkbox" id="pineapple" name="pineapple" value="pineapple">
+        <input type="checkbox" id="pineapple" name="topping" value="pineapple">
         <label for="pineapple">Pineapple</label><br>
 
-        <input type="checkbox" id="spinach" name="spinach" value="spinach">
+        <input type="checkbox" id="spinach" name="topping" value="spinach">
         <label for="spinach">Spinach</label><br>
 
-        <input type="checkbox" id="parmesean" name="parmesean" value="parmesean">
+        <input type="checkbox" id="parmesean" name="topping" value="parmesean">
         <label for="parmesean">Parmesean</label><br>
       </div>
+
       <div class="section">
         <h4>$0.50 each</h4>
-        <input type="checkbox" id="cheddar-cheese" name="cheddar-cheese" value="cheddar-cheese">
+        <input type="checkbox" id="cheddar-cheese" name="topping" value="cheddar-cheese">
         <label for="cheddar-cheese">Cheddar Cheese</label><br>
 
-        <input type="checkbox" id="feta-cheese" name="feta-cheese" value="feta-cheese">
+        <input type="checkbox" id="feta-cheese" name="topping" value="feta-cheese">
         <label for="feta-cheese">Feta Cheese</label><br>
 
-        <input type="checkbox" id="italian-sausage" name="italian-sausage" value="italian-sausage">
+        <input type="checkbox" id="italian-sausage" name="topping value=" italian-sausage">
         <label for="italian-sausage">Italian Sausage</label><br>
 
-        <input type="checkbox" id="jalapenos" name="jalapenos" value="jalapenos">
+        <input type="checkbox" id="jalapenos" name="topping" value="jalapenos">
         <label for="jalapenos">Jalapenos</label><br>
 
-        <input type="checkbox" id="bacon" name="bacon" value="bacon">
+        <input type="checkbox" id="bacon" name="topping" value="bacon">
         <label for="bacon">Bacon</label><br>
       </div>
-
-      <button class="btn btn-primary" type="button">Get Price</button>
+      <button class="btn btn-primary" type="submit">Get Price</button>
     </form>
   </div>
-
+  <div id="receipt" class="hidden">
+    <h2>Your Order</h2>
+    <p id="order-details">
+    <ul id="order"></ul>
+    </p>
+    <p>Total: $<span id="total"></span></p>
+  </div>
 </body>
 
 </html>
